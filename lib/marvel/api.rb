@@ -1,4 +1,4 @@
-require "marvel/api/version"
+require 'marvel/api/version'
 
 module Marvel
   module Api

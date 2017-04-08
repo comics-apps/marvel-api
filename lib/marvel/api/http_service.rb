@@ -1,5 +1,5 @@
 module Marvel
-  module Api
+  class Api
     module HTTPService
     end
   end

@@ -9,6 +9,8 @@ module Marvel
 
     self.http_service = HTTPService
 
+    DEFAULT_SERVER = 'http://gateway.marvel.com'.freeze
+
     attr_reader :public_key, :private_key, :options
 
     def initialize(public_key, private_key, options = {})

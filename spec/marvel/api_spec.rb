@@ -8,6 +8,11 @@ RSpec.describe Marvel::Api do
     it 'has a version' do
       expect(Marvel::Api.const_defined?('VERSION')).to be_truthy
     end
+
+    it 'has a filled default server' do
+      expect(Marvel::Api.const_defined?('DEFAULT_SERVER')).to be_truthy
+      expect(Marvel::Api::DEFAULT_SERVER).to eq('http://gateway.marvel.com')
+    end
   end
 
   it 'has an attr_reader for public key' do

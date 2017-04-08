@@ -43,4 +43,17 @@ RSpec.describe Marvel::Api do
     service = Marvel::Api.new(public_key, private_key, options)
     expect(service.options).to eq(proxy: 'localhost')
   end
+
+  it 'returns response for types request' do
+    VCR.use_cassette('comics') do
+      service = Marvel::Api.new(
+        ENV['MARVEL_PUBLIC_KEY'], ENV['MARVEL_PRIVATE_KEY']
+      )
+      response = service.comics(limit: 1)
+      expect(response).to be_a(Marvel::Api::Response)
+      expect(response.status).to eq(200)
+      expect(response.results).to be_an(Array)
+      expect(response.results).not_to be_empty
+    end
+  end
 end

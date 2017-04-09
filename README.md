@@ -1,5 +1,7 @@
 # Marvel::Api
 
+[![Build Status](https://travis-ci.org/comics-apps/marvel-api.svg?branch=master)](https://travis-ci.org/comics-apps/marvel-api)
+
 A simple Marvel API client for Ruby, inspired by the koala's gem style.
 
 ## Installation

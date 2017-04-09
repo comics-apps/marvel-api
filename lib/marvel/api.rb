@@ -40,7 +40,7 @@ module Marvel
     private
 
     def ts
-      Time.now.to_i
+      Time.now.utc.to_i
     end
 
     def request_hash

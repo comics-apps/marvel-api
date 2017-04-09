@@ -9,13 +9,16 @@ Dir[File.dirname(__FILE__) + "/support/**/*.rb"].each {|f| require f }
 
 Dotenv.load
 
+ENV['MARVEL_PUBLIC_KEY'] ||= 'public-key'
+ENV['MARVEL_PRIVATE_KEY'] ||= 'private-key'
+
 VCR.configure do |c|
   c.cassette_library_dir = File.join(File.dirname(__FILE__), 'vcr')
   c.hook_into :webmock
   c.filter_sensitive_data('<API_KEY>') { ENV['MARVEL_PUBLIC_KEY'] }
-  c.filter_sensitive_data('<TS>') { Time.local(2000, 1, 1).to_i }
+  c.filter_sensitive_data('<TS>') { Time.utc(2000, 1, 1).to_i }
   c.filter_sensitive_data('<HASH>') do
-    ts = Time.local(2000, 1, 1).to_i
+    ts = Time.utc(2000, 1, 1).to_i
     private_key = ENV['MARVEL_PRIVATE_KEY']
     public_key = ENV['MARVEL_PUBLIC_KEY']
     Digest::MD5.hexdigest("#{ts}#{private_key}#{public_key}")
@@ -42,7 +45,7 @@ end
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   config.before do
-    Timecop.freeze(Time.local(2000, 1, 1))
+    Timecop.freeze(Time.utc(2000, 1, 1))
   end
 
   config.after do

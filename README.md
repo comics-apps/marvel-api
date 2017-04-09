@@ -1,5 +1,6 @@
 # Marvel::Api
 
+[![Gem Downloads](https://img.shields.io/gem/dt/marvel-api.svg)](https://rubygems.org/gems/marvel-api)
 [![Build Status](https://travis-ci.org/comics-apps/marvel-api.svg?branch=master)](https://travis-ci.org/comics-apps/marvel-api)
 [![Code Climate](https://codeclimate.com/github/comics-apps/marvel-api.svg)](https://codeclimate.com/github/comics-apps/marvel-api)
 

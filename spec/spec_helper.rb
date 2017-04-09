@@ -5,6 +5,8 @@ require 'webmock'
 
 require 'marvel/api'
 
+Dir[File.dirname(__FILE__) + "/support/**/*.rb"].each {|f| require f }
+
 Dotenv.load
 
 VCR.configure do |c|

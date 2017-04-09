@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://gateway.marvel.com/v1/public/stories?apikey=<API_KEY>&hash=<HASH>&limit=1&ts=<TS>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Etag:
+      - fae6745c6796ade5b090b7b83a7702eeb750b4eb
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 08 Apr 2017 21:13:36 GMT
+      Connection:
+      - keep-alive
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjb2RlIjoyMDAsInN0YXR1cyI6Ik9rIiwiY29weXJpZ2h0IjoiwqkgMjAx
+        NyBNQVJWRUwiLCJhdHRyaWJ1dGlvblRleHQiOiJEYXRhIHByb3ZpZGVkIGJ5
+        IE1hcnZlbC4gwqkgMjAxNyBNQVJWRUwiLCJhdHRyaWJ1dGlvbkhUTUwiOiI8
+        YSBocmVmPVwiaHR0cDovL21hcnZlbC5jb21cIj5EYXRhIHByb3ZpZGVkIGJ5
+        IE1hcnZlbC4gwqkgMjAxNyBNQVJWRUw8L2E+IiwiZXRhZyI6ImZhZTY3NDVj
+        Njc5NmFkZTViMDkwYjdiODNhNzcwMmVlYjc1MGI0ZWIiLCJkYXRhIjp7Im9m
+        ZnNldCI6MCwibGltaXQiOjEsInRvdGFsIjo4NzQ3NSwiY291bnQiOjEsInJl
+        c3VsdHMiOlt7ImlkIjo3LCJ0aXRsZSI6IkludmVzdGlnYXRpbmcgdGhlIG11
+        cmRlciBvZiBhIHRlZW5hZ2UgZ2lybCwgQ2FnZSBzdWRkZW5seSBsZWFybnMg
+        dGhhdCBhIHRocmVlLXdheSBnYW5nIHdhciBpcyB1bmRlciB3YXkgZm9yIGNv
+        bnRyb2wgb2YgdGhlIHR1cmYiLCJkZXNjcmlwdGlvbiI6IiIsInJlc291cmNl
+        VVJJIjoiaHR0cDovL2dhdGV3YXkubWFydmVsLmNvbS92MS9wdWJsaWMvc3Rv
+        cmllcy83IiwidHlwZSI6InN0b3J5IiwibW9kaWZpZWQiOiIxOTY5LTEyLTMx
+        VDE5OjAwOjAwLTA1MDAiLCJ0aHVtYm5haWwiOm51bGwsImNyZWF0b3JzIjp7
+        ImF2YWlsYWJsZSI6MCwiY29sbGVjdGlvblVSSSI6Imh0dHA6Ly9nYXRld2F5
+        Lm1hcnZlbC5jb20vdjEvcHVibGljL3N0b3JpZXMvNy9jcmVhdG9ycyIsIml0
+        ZW1zIjpbXSwicmV0dXJuZWQiOjB9LCJjaGFyYWN0ZXJzIjp7ImF2YWlsYWJs
+        ZSI6MCwiY29sbGVjdGlvblVSSSI6Imh0dHA6Ly9nYXRld2F5Lm1hcnZlbC5j
+        b20vdjEvcHVibGljL3N0b3JpZXMvNy9jaGFyYWN0ZXJzIiwiaXRlbXMiOltd
+        LCJyZXR1cm5lZCI6MH0sInNlcmllcyI6eyJhdmFpbGFibGUiOjEsImNvbGxl
+        Y3Rpb25VUkkiOiJodHRwOi8vZ2F0ZXdheS5tYXJ2ZWwuY29tL3YxL3B1Ymxp
+        Yy9zdG9yaWVzLzcvc2VyaWVzIiwiaXRlbXMiOlt7InJlc291cmNlVVJJIjoi
+        aHR0cDovL2dhdGV3YXkubWFydmVsLmNvbS92MS9wdWJsaWMvc2VyaWVzLzYi
+        LCJuYW1lIjoiQ2FnZSBWb2wuIEkgKDIwMDIpIn1dLCJyZXR1cm5lZCI6MX0s
+        ImNvbWljcyI6eyJhdmFpbGFibGUiOjEsImNvbGxlY3Rpb25VUkkiOiJodHRw
+        Oi8vZ2F0ZXdheS5tYXJ2ZWwuY29tL3YxL3B1YmxpYy9zdG9yaWVzLzcvY29t
+        aWNzIiwiaXRlbXMiOlt7InJlc291cmNlVVJJIjoiaHR0cDovL2dhdGV3YXku
+        bWFydmVsLmNvbS92MS9wdWJsaWMvY29taWNzLzk0MSIsIm5hbWUiOiJDYWdl
+        IFZvbC4gSSAoSGFyZGNvdmVyKSJ9XSwicmV0dXJuZWQiOjF9LCJldmVudHMi
+        OnsiYXZhaWxhYmxlIjowLCJjb2xsZWN0aW9uVVJJIjoiaHR0cDovL2dhdGV3
+        YXkubWFydmVsLmNvbS92MS9wdWJsaWMvc3Rvcmllcy83L2V2ZW50cyIsIml0
+        ZW1zIjpbXSwicmV0dXJuZWQiOjB9LCJvcmlnaW5hbElzc3VlIjp7InJlc291
+        cmNlVVJJIjoiaHR0cDovL2dhdGV3YXkubWFydmVsLmNvbS92MS9wdWJsaWMv
+        Y29taWNzLzk0MSIsIm5hbWUiOiJDYWdlIFZvbC4gSSAoSGFyZGNvdmVyKSJ9
+        fV19fQ==
+    http_version: 
+  recorded_at: Fri, 31 Dec 1999 23:00:00 GMT
+recorded_with: VCR 3.0.3

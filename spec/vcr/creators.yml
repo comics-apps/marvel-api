@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 08 Apr 2017 21:15:59 GMT
+      - Sun, 09 Apr 2017 19:49:04 GMT
       Connection:
       - keep-alive
       Transfer-Encoding:
@@ -60,5 +60,5 @@ http_interactions:
         cmVhdG9ycy83OTY4P3V0bV9jYW1wYWlnbj1hcGlSZWYmdXRtX3NvdXJjZT08
         QVBJX0tFWT4ifV19XX19
     http_version: 
-  recorded_at: Fri, 31 Dec 1999 23:00:00 GMT
+  recorded_at: Sat, 01 Jan 2000 00:00:00 GMT
 recorded_with: VCR 3.0.3
